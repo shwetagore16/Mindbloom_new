@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MindBloom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            🌱 MindBloom
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="mood.html">My Mood</a></li>
+                <li><a href="plant.html">My Plant</a></li>
+                <li><a href="journal.html">Journal Space</a></li>
+                <li><a href="relax.html">Relax Zone</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><button class="logout-btn" id="logout-btn">Log Out</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <h1 class="welcome-message" id="welcome-message">Welcome to MindBloom, there!</h1>
+        
+        <div class="dashboard-cards">
+            <div class="dash-card" onclick="window.location.href='relax.html'">
+                <h3>🎧 Relax Zone</h3>
+                <p>Find peace with calming sounds and guided meditations.</p>
+            </div>
+            <div class="dash-card" onclick="window.location.href='journal.html'">
+                <h3>📓 Journal Space</h3>
+                <p>Express your thoughts and reflect on your day.</p>
+            </div>
+            <div class="dash-card" onclick="window.location.href='mood.html'">
+                <h3>😊 My Mood</h3>
+                <p>Track your emotions to understand your well-being.</p>
+            </div>
+            <div class="dash-card" onclick="window.location.href='plant.html'">
+                <h3>🌱 My Plant</h3>
+                <p>Nurture a virtual plant as you grow your habits.</p>
+            </div>
+        </div>
+
+        <div class="quote-container">
+            <p id="quote-text">"The best time to relax is when you don't have time for it."</p>
+            <p id="quote-author">- Sydney J. Harris</p>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

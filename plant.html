@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plant - MindBloom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            🌱 MindBloom
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="mood.html">My Mood</a></li>
+                <li><a href="plant.html">My Plant</a></li>
+                <li><a href="journal.html">Journal Space</a></li>
+                <li><a href="relax.html">Relax Zone</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><button class="logout-btn" id="logout-btn">Log Out</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="plant-container">
+            <h1 class="welcome-message">Watch Your Wellness Bloom!</h1>
+            
+            <div id="plant-display" class="plant-display">
+                <span id="plant-emoji">🌱</span>
+            </div>
+
+            <div id="plant-message" class="plant-message"></div>
+
+            <div class="progress-stats">
+                <div class="stat-card">
+                    <h3>Mood Entries</h3>
+                    <p id="mood-count">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Growth Points</h3>
+                    <p id="plant-xp">0 / 10</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Check-in Streak</h3>
+                    <p id="checkin-streak">0 Days</p>
+                </div>
+            </div>
+
+            <button id="water-plant-btn" class="btn">Water My Plant</button>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="plant.js"></script>
+</body>
+</html>
