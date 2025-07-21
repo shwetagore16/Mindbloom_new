@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - MindBloom</title>
+    <title>My Profile - MindBloom</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -14,23 +14,59 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mood.html">Mood</a></li>
-                <li><a href="plant.html">Plant</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="relax.html">Relax</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><button class="logout-btn" id="logout-btn">Logout</button></li>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="mood.html">My Mood</a></li>
+                <li><a href="plant.html">My Plant</a></li>
+                <li><a href="journal.html">Journal Space</a></li>
+                <li><a href="relax.html">Relax Zone</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><button class="logout-btn" id="logout-btn">Log Out</button></li>
             </ul>
         </nav>
     </header>
 
     <main class="dashboard">
-        <h1 class="welcome-message">Your Profile</h1>
-        <p>Manage your account settings. Page coming soon.</p>
-    </main>
+        <h1 class="welcome-message" id="profile-welcome">Hello!</h1>
+        <div class="profile-container">
+            <div class="profile-card">
+                <h2>My Details</h2>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <label>Full Name</label>
+                        <p id="display-name">User Name</p>
+                        <input type="text" id="input-name" class="hidden">
+                    </div>
+                    <div class="info-item">
+                        <label>Email Address</label>
+                        <p id="display-email">user@example.com</p>
+                        <input type="email" id="input-email" class="hidden">
+                    </div>
+                </div>
+                <button id="edit-profile-btn" class="btn">Edit Profile</button>
+            </div>
 
+            <div class="profile-card stats-card">
+                <h2>My Wellness Journey</h2>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <label>Plant Stage</label>
+                        <p id="stat-plant-stage">🌱 Seedling</p>
+                    </div>
+                    <div class="stat-item">
+                        <label>Journal Entries</label>
+                        <p id="stat-journal-entries">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <label>Mood Entries</label>
+                        <p id="stat-mood-entries">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="toast-notification" class="toast"></div>
     <script src="main.js"></script>
+    <script src="profile.js"></script>
 </body>
 </html>

@@ -629,6 +629,77 @@ nav ul li a:hover, .logout-btn:hover {
     margin: 10px auto;
 }
 
+/* Profile Page Styles */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.profile-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.profile-card h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.info-item, .stat-item {
+    margin-bottom: 25px;
+}
+
+.info-item label, .stat-item label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.info-item p, .stat-item p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.info-item input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.hidden {
+    display: none;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats-card {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+}
+
 /* Toast Notification Styles */
 .toast {
     position: fixed;
