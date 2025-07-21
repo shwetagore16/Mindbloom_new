@@ -107,6 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 
+    // --- Logout Functionality ---
+    document.getElementById('logout-btn').addEventListener('click', () => {
+        // Remove all relevant keys
+        localStorage.removeItem('mindbloom_user');
+        localStorage.removeItem('mindbloom_loggedIn');
+        // Optionally clear other session data if needed
+        window.location.href = 'login.html';
+    });
+
     // --- Initial Load ---
     loadProfileData();
 });

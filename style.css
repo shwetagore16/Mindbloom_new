@@ -652,6 +652,21 @@ nav ul li a:hover, .logout-btn:hover {
     margin-bottom: 30px;
 }
 
+.btn-logout {
+    background: #ffb3b3;
+    color: #7a2222;
+    font-weight: 600;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(255, 0, 0, 0.05);
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-logout:hover {
+    background: #ff7675;
+    color: #fff;
+}
+
 .info-item, .stat-item {
     margin-bottom: 25px;
 }
